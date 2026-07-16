@@ -1,0 +1,93 @@
+/* Reset básico e box-sizing global */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header estilizado com gradiente e alinhamento central */
+header {
+  background-image: linear-gradient(90deg, #E53935, #C62828, #E53935);
+  width: 100%;
+  padding: 1rem 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo no header */
+header img {
+  width: 250px;
+  height: auto;
+
+}
+
+/* Conteúdo principal */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* corrigido de justify-items (não existe) */
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Labels com espaçamento e fonte */
+main label {
+  margin: 15px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte mais moderna */
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Container principal com largura fixa, responsivo e estilizado */
+.main-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #dfdede;
+  border-radius: 25px;
+  margin-top: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Botão estilizado dentro do container */
+.main-container button {
+
+  margin-top: 15px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2f9e39;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+#process{
+    background-color: #2f9e39;
+}
+
+#reset{
+    background-color: #c22d22;
+}
+
+
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  header img {
+    width: 180px;
+  }
+
+  .main-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

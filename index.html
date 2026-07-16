@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF Flex</title>
+  <link rel="shortcut icon" href="./img/idi9upTere.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style/style.css">
+
+  <!-- Bibliotecas -->
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip/dist/jszip.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="./img/logo branco.png" alt="">
+  </header>
+
+  <main>
+    <div class="main-container">
+      <label for="mode">Modo de Operação:</label>
+      <select id="mode">
+        <option value="split">Dividir PDF</option>
+        <option value="merge">Juntar PDFs</option>
+      </select>
+
+      <label for="upload">Selecione o(s) arquivo(s) PDF:</label>
+      <input type="file" id="upload" accept="application/pdf" multiple />
+
+      <div class="buttons">
+        <button id="process">Executar</button>
+        <button id="reset">Limpar</button>
+      </div>
+
+      <section id="downloads"></section>
+    </div>
+  </main>
+
+  <!-- Script principal -->
+  <script src="./script/script.js"></script>
+</body>
+</html>
